@@ -132,9 +132,23 @@
             <div class="flex flex-col w-full gap-4 md:w-1/2">
 
                 {#each services as item, index}
-                    <a href="{item.subject}">
+                    <!-- <a href="{item.subject}">
                         <div class="bg-blue flex gap-3 p-2.5 rounded-2xl hover:shadow-2xl {index === 0 ? "rounded-tr-6xl" : index === services.length - 1 && "rounded-br-6xl"}">
                             <div class="p-10 bg-white rounded-lg h-fit w-fit {index === 0 ? "rounded-tr-6xl" : index === services.length - 1 && "rounded-br-6xl"}">
+                                <svelte:component this={item.icon} />
+                            </div>
+                            <div class="flex flex-col gap-1.5 py-2 w-full">
+                                <div class="flex items-center justify-between">
+                                    <h1 class="text-2xl font-semibold text-white underline font-bricolage-condensed underline-offset-4">{item.title}</h1>
+                                    <Linked />
+                                </div>
+                                <span class="font-medium text-white">{item.description}</span>
+                            </div>
+                        </div>
+                    </a> -->
+                    <a href="{item.subject}">
+                        <div class="bg-blue flex gap-3 p-2.5 rounded-2xl hover:shadow-2xl">
+                            <div class="p-10 bg-white rounded-lg h-fit w-fit">
                                 <svelte:component this={item.icon} />
                             </div>
                             <div class="flex flex-col gap-1.5 py-2 w-full">

@@ -17,6 +17,9 @@ import DiscordBlack from "$lib/icons/menu/Discord.svelte";
 import TwitterBlack from "$lib/icons/menu/Twitter.svelte";
 import BlueskyBlack from "$lib/icons/menu/Bluesky.svelte";
 
+import Email from "./icons/blue/Email.svelte";
+import EmailBlack from "./icons/menu/Email.svelte";
+
 interface Item {
     title?: string;
     subject?: string;
@@ -49,20 +52,20 @@ const choices: Item[] = [
 ];
 
 const services: Item[] = [
+    // {
+    //     title: "Management",
+    //     description: "I will do Discord community management for you!",
+    //     icon: Bag,
+    //     subject: "https://www.fiverr.com/emmy1231/do-discord-community-management"
+    // },
+    // {
+    //     title: "Moderation",
+    //     description: "I will do Discord community moderation for you!",
+    //     icon: Shield,
+    //     subject: "https://www.fiverr.com/emmy1231/do-discord-server-moderation"
+    // },
     {
-        title: "Management",
-        description: "I will do Discord community management for you!",
-        icon: Bag,
-        subject: "https://www.fiverr.com/emmy1231/do-discord-community-management"
-    },
-    {
-        title: "Moderation",
-        description: "I will do Discord community moderation for you!",
-        icon: Shield,
-        subject: "https://www.fiverr.com/emmy1231/do-discord-server-moderation"
-    },
-    {
-        title: "Design",
+        title: "Server Setup",
         description: "I will setup a professional Discord server for you!",
         icon: Paint,
         subject: "https://www.fiverr.com/emmy1231/setup-a-professional-discord-server"
@@ -96,73 +99,61 @@ const socials: Item[] = [
         subject: "https://discord.com/users/412058573372260353"
     },
     {
-        title: "Twitter",
-        icon: Twitter,
-        subject: "https://twitter.com/EmiliaPetersen0"
-    },
-    {
         title: "Bluesky",
         icon: Bluesky,
-        subject: "https://bsky.app/profile/emiliapetersen.bsky.social"
+        subject: "https://bsky.app/profile/emiliathefallen.bsky.social"
+    },
+    {
+        title: "Email",
+        icon: Email,
+        subject: "mailto:contact@emiliapetersen.com"
     }
 ];
 
 const guilds: {
     row1: Item[],
-    row2: Item[]
+    // row2: Item[]
 } = {
     row1: [
         {
-            title: "Blight: Survival",
-            subject: "28,000+ Members",
-            description: "https://discord.gg/blightsurvival",
-            image: "https://cdn.discordapp.com/icons/853976357746900992/a_7ed3604d25974f44c55d670a0b010039.gif?size=1024&width=0&height=256"
+            title: "Dragontwin",
+            subject: "30,000+ Members",
+            description: "https://discord.gg/dragontwin",
+            image: "servers/DRAGONTWIN.webp"
         },
         {
             title: "Unrecord",
-            subject: "29,000+ Members",
+            subject: "30,000+ Members",
             description: "https://discord.gg/unrecord",
-            image: "https://cdn.discordapp.com/icons/1088837206849896539/cf9903afa837fc993f53a4f2ec0a0263.webp?size=1024&format=webp&width=0&height=256"
+            image: "servers/UNRECORD.webp"
         },
         {
-            title: "ChibeeU",
-            subject: "35+ Members",
-            description: "https://discord.gg/rvRf5vuwXb",
-            image: "https://cdn.discordapp.com/icons/1161862962961727521/30d1923522232c5668f3e03050efeb5e.webp?size=1024&format=webp&width=0&height=256"
+            title: "Fiefdom",
+            subject: "1,000+ Members",
+            description: "https://discord.gg/nufpxHrjrS",
+            image: "servers/FIEFDOM.webp"
         },
         {
-            title: "Kinstrife",
-            subject: "2000+ Members",
-            description: "https://discord.gg/nxtWpbvfFJ",
-            image: "https://cdn.discordapp.com/attachments/1196003341575135242/1198333066733690880/image.png?ex=65be85a3&is=65ac10a3&hm=0b70df6b909dcfed025c25f02475587e4196da09bf8617250797a1409fef68ba&"
+            title: "modMAIL",
+            subject: "1,000,000+ Members",
+            description: "https://discord.gg/tpv3PwvhvB",
+            image: "servers/modMAIL.png"
         }
     ],
-    row2: [
-        {
-            title: "Organise & Optimise",
-            subject: "100+ Members",
-            description: "https://discord.gg/CZXmatPxQ5",
-            image: "https://cdn.discordapp.com/icons/1121502048517632122/dbf8ff464aca5973a6d155509150483f.webp?size=1024&format=webp&width=0&height=256"
-        },
-        {
-            title: "Rise & Reign",
-            subject: "400+ Members",
-            description: "https://discord.gg/42dnzBwkXd",
-            image: "https://cdn.discordapp.com/icons/869610180009156659/599d08bdc2cf8dceee4cebb0414f4e13.webp?size=1024&format=webp&width=0&height=256"
-        },
-        {
-            title: "Emilia's Den",
-            subject: "20+ Members",
-            description: "https://discord.gg/pJc2djYZHX",
-            image: "https://cdn.discordapp.com/icons/1197169837617709207/cf4a67ceb77ddaa0ba09d213dd0f3088.webp?size=1024&format=webp&width=0&height=256"
-        },
-        {
-            title: "Trans Gamers",
-            subject: "50+ Members",
-            description: "https://discord.gg/SVe9pNwtD9",
-            image: "https://cdn.discordapp.com/icons/1121150410779021342/ce679d7e1a45e719b7e553e460df96d6.webp?size=1024&format=webp&width=0&height=256"
-        }
-    ]
+    // row2: [
+    //     {
+    //         title: "Organise & Optimise",
+    //         subject: "100+ Members",
+    //         description: "https://discord.gg/CZXmatPxQ5",
+    //         image: "https://cdn.discordapp.com/icons/1121502048517632122/dbf8ff464aca5973a6d155509150483f.webp?size=1024&format=webp&width=0&height=256"
+    //     },
+    //     {
+    //         title: "Rise & Reign",
+    //         subject: "400+ Members",
+    //         description: "https://discord.gg/42dnzBwkXd",
+    //         image: "https://cdn.discordapp.com/icons/869610180009156659/599d08bdc2cf8dceee4cebb0414f4e13.webp?size=1024&format=webp&width=0&height=256"
+    //     }
+    // ]
 }
 
 const options: Item[] = [
@@ -200,6 +191,11 @@ const options: Item[] = [
         title: "Bluesky",
         icon: BlueskyBlack,
         subject: "https://bsky.app/profile/emiliapetersen.bsky.social"
+    },
+    {
+        title: "Email",
+        icon: EmailBlack,
+        subject: "mailto:contact@emiliapetersen.com"
     }
 ];
 
