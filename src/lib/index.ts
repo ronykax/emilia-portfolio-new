@@ -52,18 +52,18 @@ const choices: Item[] = [
 ];
 
 const services: Item[] = [
-    // {
-    //     title: "Management",
-    //     description: "I will do Discord community management for you!",
-    //     icon: Bag,
-    //     subject: "https://www.fiverr.com/emmy1231/do-discord-community-management"
-    // },
-    // {
-    //     title: "Moderation",
-    //     description: "I will do Discord community moderation for you!",
-    //     icon: Shield,
-    //     subject: "https://www.fiverr.com/emmy1231/do-discord-server-moderation"
-    // },
+    {
+        title: "Management",
+        description: "I will do Discord community management for you!",
+        icon: Bag,
+        subject: "https://www.fiverr.com/emmy1231/do-discord-community-management"
+    },
+    {
+        title: "Moderation",
+        description: "I will do Discord community moderation for you!",
+        icon: Shield,
+        subject: "https://www.fiverr.com/emmy1231/do-discord-server-moderation"
+    },
     {
         title: "Server Setup",
         description: "I will setup a professional Discord server for you!",
@@ -135,7 +135,8 @@ const guilds: {
         },
         {
             title: "modMAIL",
-            subject: "1,000,000+ Members",
+            subject: "",
+            // subject: "1,000,000+ Members",
             description: "https://discord.gg/tpv3PwvhvB",
             image: "servers/modMAIL.png"
         }
