@@ -96,7 +96,7 @@ const socials: Item[] = [
     {
         title: "Discord",
         icon: Discord,
-        subject: "https://discord.com/users/412058573372260353"
+        subject: "https://discord.gg/yeBX7NZBNz"
     },
     {
         title: "Bluesky",
